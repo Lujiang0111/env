@@ -10,5 +10,11 @@ if not exist "source\lib\lccl" (
     git clone https://github.com/Lujiang0111/lccl.git source\lib\lccl
 )
 
+:: pcap_recorder2
+if not exist "source\program\pcap_recorder2" (
+    git clone https://github.com/Lujiang0111/pcap_recorder2.git source\program\pcap_recorder2
+)
+
+
 echo done.
 pause
