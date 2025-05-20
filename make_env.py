@@ -15,6 +15,9 @@ Path("version/lib").mkdir(parents=True, exist_ok=True)
 # 克隆库
 git_clone_if_missing("https://github.com/Lujiang0111/lccl.git", "source/lib/lccl")
 git_clone_if_missing(
+    "https://github.com/Lujiang0111/libpcap_dump.git", "source/lib/libpcap_dump"
+)
+git_clone_if_missing(
     "https://github.com/Lujiang0111/pcap_recorder2.git", "source/program/pcap_recorder2"
 )
 
