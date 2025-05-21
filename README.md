@@ -2,4 +2,4 @@
 
 ## 构建env
 
-+ 运行`make_env.bat`
++ 运行`make_env.py`
