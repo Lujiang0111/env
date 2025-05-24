@@ -12,11 +12,16 @@ Path("source/lib").mkdir(parents=True, exist_ok=True)
 Path("source/program").mkdir(parents=True, exist_ok=True)
 Path("version/lib").mkdir(parents=True, exist_ok=True)
 
-# 克隆库
+# source/lib
 git_clone_if_missing("https://github.com/Lujiang0111/lccl.git", "source/lib/lccl")
 git_clone_if_missing(
     "https://github.com/Lujiang0111/pcap_dump.git", "source/lib/pcap_dump"
 )
+git_clone_if_missing(
+    "https://github.com/Lujiang0111/ts_transmit.git", "source/lib/ts_transmit"
+)
+
+# source/program
 git_clone_if_missing(
     "https://github.com/Lujiang0111/pcap_recorder2.git", "source/program/pcap_recorder2"
 )
