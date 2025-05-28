@@ -2,4 +2,4 @@
 
 ## 构建env
 
-+ 运行`make_env.py`
++ 运行`generate_env.py`
