@@ -29,5 +29,8 @@ git_clone_if_missing(
 git_clone_if_missing(
     "https://github.com/Lujiang0111/pcap_recorder2.git", "source/program/pcap_recorder2"
 )
+git_clone_if_missing(
+    "https://github.com/Lujiang0111/udp_recorder.git", "source/program/udp_recorder"
+)
 
 print("generate done.")
