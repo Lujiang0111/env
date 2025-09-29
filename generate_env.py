@@ -35,7 +35,7 @@ if __name__ == "__main__":
         "https://github.com/Lujiang0111/udp_recorder.git", "source/program/udp_recorder"
     )
     git_sync(
-        "https://github.com/Lujiang0111/tstx.git", "source/program/tstx"
+        "https://github.com/Lujiang0111/msender.git", "source/program/msender"
     )
 
     print("generate done.")
