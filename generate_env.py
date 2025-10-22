@@ -5,7 +5,10 @@ import subprocess
 
 def git_sync(repo_url, target_dir):
     if pathlib.Path(target_dir).exists():
-        subprocess.run(["git", "-C", target_dir, "pull", "origin", "main"], check=True)
+        current_dir = os.getcwd()
+        os.chdir(target_dir)
+        subprocess.run(["git", "pull", "origin", "main"], check=True)
+        os.chdir(current_dir)
     else:
         subprocess.run(["git", "clone", repo_url, target_dir], check=True)
 
@@ -34,8 +37,6 @@ if __name__ == "__main__":
     git_sync(
         "https://github.com/Lujiang0111/udp_recorder.git", "source/program/udp_recorder"
     )
-    git_sync(
-        "https://github.com/Lujiang0111/msender.git", "source/program/msender"
-    )
+    git_sync("https://github.com/Lujiang0111/msender.git", "source/program/msender")
 
     print("generate done.")
