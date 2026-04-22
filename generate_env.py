@@ -14,8 +14,8 @@ def git_sync(repo_url, target_dir):
 
 
 if __name__ == "__main__":
-    env_path = pathlib.Path(__file__).resolve().parent
-    os.chdir(env_path)
+    env_dir = pathlib.Path(__file__).resolve().parent
+    os.chdir(env_dir)
 
     # 更新env自身
     git_sync("https://github.com/Lujiang0111/env.git", ".")
