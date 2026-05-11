@@ -7,10 +7,10 @@ def git_sync(repo_url, target_dir):
     if pathlib.Path(target_dir).exists():
         current_dir = os.getcwd()
         os.chdir(target_dir)
-        subprocess.run(["git", "pull", "origin", "main"], check=True)
+        subprocess.run(["git", "pull", "origin", "main"], check=False)
         os.chdir(current_dir)
     else:
-        subprocess.run(["git", "clone", repo_url, target_dir], check=True)
+        subprocess.run(["git", "clone", repo_url, target_dir], check=False)
 
 
 if __name__ == "__main__":
@@ -28,6 +28,9 @@ if __name__ == "__main__":
     # source/lib
     git_sync("https://github.com/Lujiang0111/lccl.git", "source/lib/lccl")
     git_sync("https://github.com/Lujiang0111/pcap_dump.git", "source/lib/pcap_dump")
+    git_sync(
+        "https://github.com/Lujiang0111/pcap_extract.git", "source/lib/pcap_extract"
+    )
 
     # source/program
     git_sync(
