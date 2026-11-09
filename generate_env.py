@@ -28,9 +28,6 @@ if __name__ == "__main__":
     # source/lib
     git_sync("https://github.com/Lujiang0111/lccl.git", "source/lib/lccl")
     git_sync("https://github.com/Lujiang0111/pcap_dump.git", "source/lib/pcap_dump")
-    git_sync(
-        "https://github.com/Lujiang0111/pcap_extract.git", "source/lib/pcap_extract"
-    )
 
     # source/program
     git_sync(
@@ -40,6 +37,5 @@ if __name__ == "__main__":
     git_sync(
         "https://github.com/Lujiang0111/udp_recorder.git", "source/program/udp_recorder"
     )
-    git_sync("https://github.com/Lujiang0111/msender.git", "source/program/msender")
 
     print("generate done.")
